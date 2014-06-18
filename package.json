@@ -1,0 +1,53 @@
+{
+  "name": "grunt-penthouse",
+  "description": "Grunt plugin for extracting critical path css",
+  "version": "0.1.0",
+  "homepage": "https://github.com/fatso83/grunt-penthouse",
+  "author": {
+    "name": "Carl-Erik Kopseng",
+    "email": "carlerik@gmail.com",
+    "url": "http://oligofren.wordpress.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/fatso83/grunt-penthouse.git"
+  },
+  "bugs": {
+    "url": "https://github.com/fatso83/grunt-penthouse/issues"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/fatso83/grunt-penthouse/blob/master/LICENSE-MIT"
+    }
+  ],
+  "engines": {
+    "node": ">= 0.8.0"
+  },
+  "scripts": {
+    "test": "grunt test"
+  },
+  "dependencies": {
+    "penthouse": "^0.2.0"
+  },
+  "devDependencies": {
+    "chai": "^1.9.1",
+    "grunt": "~0.4.2",
+    "grunt-contrib-clean": "~0.4.0",
+    "grunt-contrib-connect": "^0.8.0",
+    "grunt-contrib-jshint": "~0.6.0",
+    "grunt-contrib-watch": "^0.6.1",
+    "grunt-mocha-test": "^0.11.0",
+    "load-grunt-tasks": "^0.4.0"
+  },
+  "peerDependencies": {
+    "grunt": "~0.4.2"
+  },
+  "keywords": [
+    "gruntplugin",
+    "penthouse",
+    "critical path css",
+    "tools",
+    "css"
+  ]
+}
