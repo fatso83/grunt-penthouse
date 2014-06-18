@@ -1,7 +1,7 @@
 {
   "name": "grunt-penthouse",
   "description": "Grunt plugin for extracting critical path css",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "homepage": "https://github.com/fatso83/grunt-penthouse",
   "author": {
     "name": "Carl-Erik Kopseng",
