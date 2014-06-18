@@ -8,22 +8,14 @@
 
 'use strict';
 
-var penthouse = require('penthouse'),
-    path = require('path'),
-    fs = require('fs-extra');
-
 module.exports = function(grunt) {
-    var pretty = function(o) {
-        return JSON.stringify(o, null, "  ");
-    };
+    var penthouse = require('penthouse');
 
     grunt.registerMultiTask('penthouse', 'Extracts critical path CSS', function() {
 
         // we don't check for errors in config, but leave the error reporting to penthouse
         var done = this.async(),
-            options = this.data,
-            outfile = path.normalize(this.data.outfile),
-            dir=path.dirname(outfile);
+            options = this.data;
 
             penthouse( options, function(err, result) {
                 if(err) { 
@@ -34,7 +26,7 @@ module.exports = function(grunt) {
 
                 grunt.log.debug(result);
 
-                grunt.file.write(outfile, result, {});
+                grunt.file.write(options.outfile, result, {});
                 done();
             });
     });
