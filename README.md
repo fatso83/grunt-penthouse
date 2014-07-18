@@ -1,5 +1,5 @@
 # grunt-penthouse
-> A grunt plugin based on [Penthouse](npmjs.org/package/penthouse) that extracts 
+> A grunt plugin based on [Penthouse](http://www.npmjs.org/package/penthouse) that extracts 
 > [critical path css](http://addyosmani.com/blog/tag/critical-path-css/) to increase
 > page speed rendering
 
