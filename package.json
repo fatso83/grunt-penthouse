@@ -1,7 +1,7 @@
 {
   "name": "grunt-penthouse",
   "description": "Grunt plugin for extracting critical path css",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "homepage": "https://github.com/fatso83/grunt-penthouse",
   "author": {
     "name": "Carl-Erik Kopseng",
@@ -28,7 +28,7 @@
     "test": "grunt test"
   },
   "dependencies": {
-    "penthouse": "^0.2.0"
+    "penthouse": "^0.2.5"
   },
   "devDependencies": {
     "chai": "^1.9.1",

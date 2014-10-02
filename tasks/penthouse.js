@@ -8,27 +8,26 @@
 
 'use strict';
 
-module.exports = function(grunt) {
-    var penthouse = require('penthouse');
+module.exports = function (grunt) {
+	var penthouse = require('penthouse');
 
-    grunt.registerMultiTask('penthouse', 'Extracts critical path CSS', function() {
+	grunt.registerMultiTask('penthouse', 'Extracts critical path CSS', function () {
 
-        // we don't check for errors in config, but leave the error reporting to penthouse
-        var done = this.async(),
-            options = this.data;
+		// we don't check for errors in config, but leave the error reporting to penthouse
+		var done = this.async(),
+			options = this.data;
 
-            penthouse( options, function(err, result) {
-                if(err) { 
-                    if(err.msg) grunt.log.errorlns(err.msg); 
-                    done(false); 
-                    return;
-                }
+		penthouse(options, function (err, result) {
+			if (err) {
+				if (err.msg) { grunt.log.errorlns(err.msg); }
+				done(false);
+				return;
+			}
 
-                grunt.log.debug(result);
+			grunt.log.debug(result);
 
-                grunt.file.write(options.outfile, result, {});
-                done();
-            });
-    });
+			grunt.file.write(options.outfile, result, {});
+			done();
+		});
+	});
 };
-

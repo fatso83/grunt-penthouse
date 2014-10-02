@@ -45,8 +45,14 @@ this plugin with the `connect` plugin to automatically extract critical css as a
 in an automatic build process.
 
 ## Other tips
-The resulting css file needs to be embedded in the head of the html file. One plugin that can
-help achieve this is the [grunt-codekit plugin](http://github.com/fatso83/grunt-codekit)
+The resulting css file needs to be embedded in the head of the html files you are serving
+to your clients. This can either be done dynamically at runtime 
+(e.g. `include` in your `index.php` file), or as a part of your build process - 
+building it into your html files. One plugin that can help you achieve this is 
+the [grunt-codekit plugin](http://github.com/fatso83/grunt-codekit)
+
+See its README for an example on how to achieve this.
 
 ## Release History
 v0.1.1 First working release
+v0.1.2 Updated to penthouse version 0.2.5
