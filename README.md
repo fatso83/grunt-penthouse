@@ -56,3 +56,4 @@ See its README for an example on how to achieve this.
 ## Release History
 - v0.1.1 First working release
 - v0.1.2 Updated to penthouse version 0.2.5
+- v0.2.1 Updated to penthouse version 0.3.0
