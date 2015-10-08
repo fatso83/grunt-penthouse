@@ -20,7 +20,11 @@ module.exports = function (grunt) {
 		penthouse(options, function (err, result) {
 			if (err) {
 				if (err.msg) { grunt.log.errorlns(err.msg); }
-				done(false);
+				grunt.log.error(err);
+				if(options.skipErrors)
+					done();
+				else
+					done(false);
 				return;
 			}
 
