@@ -27,7 +27,7 @@ module.exports = function (grunt) {
 					done(false);
 				return;
 			}
-
+			grunt.log.writeln("Done!");
 			grunt.log.debug(result);
 
 			grunt.file.write(options.outfile, result, {});
