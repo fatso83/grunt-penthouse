@@ -2,7 +2,6 @@
  * grunt-penthouse
  * https://github.com/carl-erik.kopseng/grunt-penthouse
  *
- * Copyright (c) 2014 Carl-Erik Kopseng
  * Licensed under the MIT license.
  */
 
@@ -39,7 +38,16 @@ module.exports = function (grunt) {
 				url     : 'http://localhost:9001',
 				width   : 1300,
 				height  : 900
-			}
+                },
+
+            testTaskWithErrors : {
+                outfile : '.tmp/out-with-error.css',
+                css     : 'test/www/not-existing.css',
+                url     : 'http://localhost:9001',
+                width   : 1300,
+                height  : 900,
+                skipErrors : true
+            }
 		},
 
 		// Unit tests.
