@@ -22,7 +22,8 @@ grunt.loadNpmTasks('grunt-penthouse');
 
 ### Configure the Grunt task
 
-In your project's Gruntfile, add a section named `penthouse` to the data object passed into `grunt.initConfig()`.
+In your project's Gruntfile, add a section named `penthouse` to the data object 
+passed into `grunt.initConfig()`.
 
 #### Example
 
@@ -34,7 +35,8 @@ grunt.initConfig({
         css : './dist/css/full.css',
         url : 'http://localhost:9000',
         width : 1300,
-        height : 900
+        height : 900,
+        skipErrors : false // this is the default
     },
   },
 });
@@ -57,3 +59,4 @@ See its README for an example on how to achieve this.
 - v0.1.1 First working release
 - v0.1.2 Updated to penthouse version 0.2.5
 - v0.2.1 Updated to penthouse version 0.3.0
+- v0.3.0 Added `skipErrors` option. Range version for Penthouse.
