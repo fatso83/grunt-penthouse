@@ -9,12 +9,11 @@
     "url": "http://github.com/fatso83"
   },
   "scripts": {
-      "lint" : "grunt jshint",
-      "test" : "grunt test"
+    "test": "grunt test"
   },
   "pre-commit": [
-      "lint",
-      "test"
+    "lint",
+    "test"
   ],
   "repository": {
     "type": "git",
@@ -32,9 +31,6 @@
   "engines": {
     "node": ">= 0.8.0"
   },
-  "scripts": {
-    "test": "grunt test"
-  },
   "dependencies": {
     "penthouse": ">= 0.5.0 <1.0.0)"
   },
@@ -51,7 +47,7 @@
     "pre-commit": "^1.1.2"
   },
   "peerDependencies": {
-    "grunt": "~0.4.2"
+    "grunt": ">=0.4.0"
   },
   "keywords": [
     "gruntplugin",
