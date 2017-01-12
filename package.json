@@ -9,6 +9,7 @@
     "url": "http://github.com/fatso83"
   },
   "scripts": {
+    "lint": "grunt jshint",
     "test": "grunt test"
   },
   "pre-commit": [
@@ -22,6 +23,7 @@
   "bugs": {
     "url": "https://github.com/fatso83/grunt-penthouse/issues"
   },
+  "license": "MIT",
   "licenses": [
     {
       "type": "MIT",
@@ -32,19 +34,19 @@
     "node": ">= 0.8.0"
   },
   "dependencies": {
-    "penthouse": ">= 0.5.0 <1.0.0)"
+    "penthouse": ">= 0.5.0 < 1.0.0"
   },
   "devDependencies": {
     "express": "*",
-    "chai": "^1.9.1",
-    "grunt": "~0.4.2",
-    "grunt-contrib-clean": "~0.4.0",
-    "grunt-contrib-connect": "^0.8.0",
-    "grunt-contrib-jshint": "~0.6.0",
-    "grunt-contrib-watch": "^0.6.1",
-    "grunt-mocha-test": "^0.11.0",
-    "load-grunt-tasks": "^0.4.0",
-    "pre-commit": "^1.1.2"
+    "chai": "^3.5.0",
+    "grunt": "^1.0.1",
+    "grunt-contrib-clean": "^1.0.0",
+    "grunt-contrib-connect": "^1.0.2",
+    "grunt-contrib-jshint": "^1.1.0",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-mocha-test": "^0.13.2",
+    "load-grunt-tasks": "^3.5.2",
+    "pre-commit": "^1.2.2"
   },
   "peerDependencies": {
     "grunt": ">=0.4.0"
