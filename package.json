@@ -34,12 +34,13 @@
     "node": ">= 6.0"
   },
   "dependencies": {
-    "penthouse": "~1.4.0"
+    "penthouse": ">= 1.0.0"
   },
   "devDependencies": {
     "chai": "^3.5.0",
     "express": "*",
-    "grunt": "^1.0.1",
+    "grunt": "^1.0.2",
+    "grunt-cli": "^1.2.0",
     "grunt-contrib-clean": "^1.0.0",
     "grunt-contrib-connect": "^1.0.2",
     "grunt-contrib-jshint": "^1.1.0",
