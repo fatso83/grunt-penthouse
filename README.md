@@ -60,3 +60,5 @@ See its README for an example on how to achieve this.
 - v0.1.2 Updated to penthouse version 0.2.5
 - v0.2.1 Updated to penthouse version 0.3.0
 - v0.3.0 Added `skipErrors` option. Range version for Penthouse.
+- v0.4.0 Grunt 1.0
+- v1.0.0 Support for Penthouse 1+
